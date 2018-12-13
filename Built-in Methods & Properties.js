@@ -48,4 +48,14 @@ function message(message1) {
 
 var msg = message;
 
-console.log(message.name);
+console.log(msg.name);
+
+//---------
+// 获取function定义的参数的个数
+function message(message1) {
+  console.log(message1);
+}
+
+var msg = message;
+
+console.log(msg.length);
