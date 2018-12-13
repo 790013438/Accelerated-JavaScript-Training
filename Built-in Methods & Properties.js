@@ -31,3 +31,11 @@ function message(message1) {
 }
 
 message('Hi!', 10);
+
+//---------
+// 得到function的名字
+function message(message1) {
+  console.log(message1);
+}
+
+message(message.name);
