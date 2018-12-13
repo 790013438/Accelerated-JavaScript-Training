@@ -59,3 +59,11 @@ function message(message1) {
 var msg = message;
 
 console.log(msg.length);
+
+//---------
+// 打印匿名function的名字
+var msg1 = function (message1) {
+  console.log(message1);
+}
+
+console.log(msg1.name);
