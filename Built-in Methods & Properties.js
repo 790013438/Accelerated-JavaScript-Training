@@ -38,4 +38,14 @@ function message(message1) {
   console.log(message1);
 }
 
-message(message.name);
+console.log(message.name);
+
+//---------
+// 动态获取function的名字
+function message(message1) {
+  console.log(message1);
+}
+
+var msg = message;
+
+console.log(message.name);
