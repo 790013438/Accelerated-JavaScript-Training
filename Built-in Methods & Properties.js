@@ -22,3 +22,12 @@ function message(message1) {
 }
 
 message('Hi!', 10);
+
+//---------
+// 得到传入function参数的个数
+function message(message1) {
+  console.log(message1);
+  console.log(arguments.length);
+}
+
+message('Hi!', 10);
