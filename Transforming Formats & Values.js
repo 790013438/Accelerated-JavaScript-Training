@@ -13,3 +13,11 @@ console.log(parseInt(a, 16));
 // 将数字换乘string
 var a = 10;
 console.log(a.toString());
+
+// 四舍五入，并保留指定的位数
+var a = 10.3;
+console.log(a.toFixed());
+
+// 如果超过实际的小数位数，则补零
+var a = 10.3;
+console.log(a.toFixed(2));
