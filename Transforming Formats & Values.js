@@ -9,3 +9,7 @@ console.log(parseInt(a));
 // 默认是10进制，可以设置为16进制，16494883
 var a = 'FBB123';
 console.log(parseInt(a, 16));
+
+// 将数字换乘string
+var a = 10;
+console.log(a.toString());
