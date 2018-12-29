@@ -10,3 +10,7 @@ console.log(string.charAt(2));
 
 // 连接字符串, 或者使用+
 console.log(string.concat(' add a new string'));
+
+// 转换成大写，ANY TEST
+var string = 'Any test';
+console.log(string.toUpperCase());
