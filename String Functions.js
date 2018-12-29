@@ -14,3 +14,7 @@ console.log(string.concat(' add a new string'));
 // 转换成大写，ANY TEST
 var string = 'Any test';
 console.log(string.toUpperCase());
+
+// 按照指定的字母，拆分字符串
+var string = 'Any test';
+console.log(string.split(' '));
