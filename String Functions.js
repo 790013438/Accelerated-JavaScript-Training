@@ -7,3 +7,7 @@ console.log(string[2]);
 
 // str.charAt(index) 得到同样的效果,按数组下标取字母
 console.log(string.charAt(2));
+
+// 连接字符串
+var string = 'Any text';
+console.log(string.concat(' add a new string'));
