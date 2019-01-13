@@ -18,3 +18,7 @@ console.log(string.toUpperCase());
 // 按照指定的字母，拆分字符串
 var string = 'Any test';
 console.log(string.split(' '));
+
+// 不要前后的空格
+var string = '   Any text      ';
+console.log(string.trim());
