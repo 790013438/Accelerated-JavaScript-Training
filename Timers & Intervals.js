@@ -8,6 +8,7 @@ setInterval(function() {
  console.log('Ping');
 }, 500);
 
+//------------------------------------------------------------------------------
 // 一定时间后停止,clearInterval
 var interval = setInterval(function() {
  console.log('Ping');
