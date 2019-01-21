@@ -18,3 +18,8 @@ console.log(Math.E);
 (function() {
  console.log(Math.floor(1.000010000001));
 })()
+
+// 函数返回 e×，×表示参数
+(function() {
+  console.log(Math.exp(2))
+})()
