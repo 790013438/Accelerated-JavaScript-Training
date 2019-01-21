@@ -13,3 +13,8 @@ console.log(Math.E);
 (function() {
      console.log(Math.ceil(1.47));
 })()
+
+// 向下取整，1
+(function() {
+ console.log(Math.floor(1.000010000001));
+})()
