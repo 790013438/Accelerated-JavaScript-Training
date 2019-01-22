@@ -23,3 +23,8 @@ console.log(Math.E);
 (function() {
   console.log(Math.exp(2))
 })()
+
+// 返回×, e×的×
+(function(){
+   console.log(Math.log(Math.exp(2)))
+})()
