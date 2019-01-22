@@ -28,3 +28,13 @@ console.log(Math.E);
 (function(){
    console.log(Math.log(Math.exp(2)))
 })()
+
+// 取最大值
+(function(){
+   console.log(Math.max(1,2,3,4,2,34,4,12,23))
+})()
+
+// 获得随机数
+(function(){
+   console.log(Math.random())
+})()
