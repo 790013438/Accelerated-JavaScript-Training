@@ -16,3 +16,9 @@
   var today = new Date(2016, 11, 32);
   console.log(today);
 })()
+
+// 将字符串转换成日期
+(function() {
+  var today = new Date('2016/05/20');
+  console.log(today);
+})()
