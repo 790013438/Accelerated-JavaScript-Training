@@ -27,3 +27,9 @@
 (function() {
   console.log(Date.parse('2016/05/20'));
 })()
+
+// 获取日期的日,getDate
+(function() {
+  var today = new Date();
+  console.log(today.getDate());
+})()
