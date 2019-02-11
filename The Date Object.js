@@ -22,3 +22,8 @@
   var today = new Date('2016/05/20');
   console.log(today);
 })()
+
+// 将字符串格式的转换成纳秒数
+(function() {
+  console.log(Date.parse('2016/05/20'));
+})()
