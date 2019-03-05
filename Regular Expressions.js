@@ -27,9 +27,18 @@
 
 // 返回true或者false
 (function() {
-    var string = 'abab';
+  var string = 'abab';
 
-    var parttern = /ab/;
+  var parttern = /ab/;
 
-    console.log(parttern.test(string));
+  console.log(parttern.test(string));
+})()
+
+// 使用String的match
+(function(){
+  var string = 'abab';
+
+  var pattern = /ab/;
+
+  console.log(string.match(pattern));
 })()
