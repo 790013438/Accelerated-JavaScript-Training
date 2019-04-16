@@ -19,3 +19,11 @@ console.log(outerWidth)
   console.log(localStorage.setItem('key1', 1000));
   console.log(localStorage.getItem('key1'));
 })()
+
+// 像map一样，存数据在浏览器的tab页中
+(function() {
+  sessionStorage.setItem('key2', 1000);
+  console.log(sessionStorage.getItem('key2'));
+})()
+
+
