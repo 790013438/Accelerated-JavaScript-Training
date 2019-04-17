@@ -26,4 +26,12 @@ console.log(outerWidth)
   console.log(sessionStorage.getItem('key2'));
 })()
 
+// 浏览器的对象，位置
+(function(){
+  console.log(window.location)
+})()
 
+// 利用js打开网页
+(function(){
+  console.log(window.open('http://www.google.com'))
+})()
