@@ -9,6 +9,7 @@
 })()
 
 // 刷新
-(function(){ 
+(function(){
   console.log(window.location.reload())
+  console.log(window.location.reload(true))
 })()
