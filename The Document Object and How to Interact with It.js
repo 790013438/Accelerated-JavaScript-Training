@@ -17,3 +17,9 @@
 (function() {
   console.log(document.body.children)
 })()
+
+// 选择包含的第一个节点
+(function() {
+  console.log(document.body.children[0])
+})()
+
