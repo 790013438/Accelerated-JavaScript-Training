@@ -28,4 +28,10 @@ function on() {
     // 改变字体颜色
     document.body.children[0].style.backgroundColor = 'red'
   })()
+
+  // 获取第一个子节点 firstChild获取挨着的字符，比如换行符
+  (function(){
+    console.log(document.body.firstElementChild);
+  })()
+
 }
