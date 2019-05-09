@@ -4,6 +4,8 @@
   // 获取指定class的元素
   console.log(document.querySelector('.simple'));
 
+  console.log(document.querySelector('#easy'));
+
   // 获得 href属性的元素 符合该选择的第一个元素
   console.log(document.querySelector('[href]'));
 
