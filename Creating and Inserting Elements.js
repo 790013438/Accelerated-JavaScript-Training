@@ -3,4 +3,8 @@
   p.textContent = 'A new paragraph!';
   p.style.fontSize = '17px';
   console.log(p);
+
+  var a = document.querySelector('a');
+
+  a.appendChild(p);
 })()
