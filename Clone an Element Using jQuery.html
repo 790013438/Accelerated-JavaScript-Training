@@ -32,6 +32,45 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script>
     $('#target5').clone().appendTo('#right-well');
+
+    (function(){
+      // 得到#left-well 下的第一个子元素
+      console.log($('#left-well :nth-child(1)'));
+      // 不选取任何元素
+      console.log($('#left-well :nth-child(0)'));
+      // 不选取任何元素
+      console.log($('#left-well:nth-child(1)'));
+      // 不选取任何元素
+      console.log($('#left-well:nth-child(0)'));
+      // 不选取任何元素
+      console.log($('#left-well:nth-child(2n+1)'));
+      // 不选取任何元素
+      console.log($('.well:nth-child(2n+1)'))
+      // 选取.well cssClass下的第一个和第三个（奇数个子元素）
+      // 有空格是选取下一层的子元素
+      // 没有空格是选取同级
+      console.log($('.well :nth-child(2n+1)'))
+      // 不选取任何元素
+      console.log($('.well:nth-child(0)'))
+      // 不选取任何元素
+      console.log('.well:nth-child(1) -- ')
+      console.log($('.well:nth-child(1)'))
+      // 选取两个.well 的div
+      console.log('.well:nth-child(2) -- ')
+      console.log($('.well:nth-child(2)'))
+      console.log('.well:nth-child(3) -- ')
+      console.log($('.well:nth-child(3)'))
+      // 不选取任何元素
+      console.log($('.well:nth-child(2n+1)'))
+      // 选取偶数个元素对应的值
+      console.log($('.well:nth-child(2n)'))
+      // $('.well:nth-child(1)').remove();
+      // 选取.target cssClass的同级的第二个元素
+      console.log($('.target:nth-child(2)'))
+
+      // $(".target:nth-child(2)").remove();
+      $(".target:nth-child(2)").addClass("animated bounce");
+    })()
   </script>
   </body>
 </html>
