@@ -32,6 +32,7 @@ public class GreetingController {
         line.add(new Line().setValue(10).setName("裤子"));
         line.add(new Line().setValue(10).setName("高跟鞋"));
         line.add(new Line().setValue(20).setName("袜子"));
+        line.add(new Line().setValue(23).setName("滑板"));
         return line;
     }
 }

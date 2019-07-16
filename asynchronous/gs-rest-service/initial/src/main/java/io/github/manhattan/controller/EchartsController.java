@@ -18,8 +18,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 public class EchartsController {
-    @RequestMapping("/")
+    @RequestMapping("/charts")
     public String charts() {
-        return "/aa.html";
+        return "asynchronous/line";
     }
 }

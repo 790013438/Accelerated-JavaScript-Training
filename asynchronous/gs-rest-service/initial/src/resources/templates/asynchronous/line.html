@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bar</title>
+    <meta charset="utf-8"/>
+    <style>
+      .ta-border {
+        box-sizing: border-box;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bar" style="width:50rem;height:50rem;" class="ta-border"></div>
+    <script src="echarts.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+      var barChart = echarts.init(document.getElementById('bar'));
+      $.get('greeting').done(function (data){
+        barChart.setOption({
+          title: {
+            text: '异步数据加载示例'
+          },
+          tooltip: {},
+          legend: {
+            data: ['销量']
+          },
+          xAxis: {
+            data: data.map(function(item){
+              return item['name'];
+            })
+          },
+          yAxis: {},
+          series: [{
+            name: '销量',
+            type: 'bar',
+            data: data.map(function(item){
+              return item['value']
+            })
+          }]
+        });
+      });
+    </script>
+  </body>
+</html>
