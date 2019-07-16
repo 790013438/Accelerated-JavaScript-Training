@@ -27,4 +27,9 @@ public class EchartsController {
     public String bar() {
         return "asynchronous/bar";
     }
+
+    @RequestMapping("/loadingBar")
+    public String loadingBar() {
+        return "asynchronous/barLoading";
+    }
 }

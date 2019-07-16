@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>loading动画</title>
+    <meta charset='utf-8'/>
+  </head>
+  <body>
+    <div id='bar' style="width:40rem; height:30rem"></div>
+    <script src="echarts.js"></script>
+    <script src="jquery.min.js"></script>
+    <script>
+      var bar = echarts.init(document.getElementById('bar'));
+
+      // 设置加载动画
+      bar.showLoading();
+      setTimeout(function(){$.get('greeting').done(function(data) {
+        bar.hideLoading();
+        bar.setOption({
+          xAxis: {data: data.map(function(item){
+            return item['name']
+          })},
+          yAxis: {},
+          series: [{
+            type: 'bar',
+            data: data.map(function(item){
+              return item['value']
+            })
+          }]
+        });
+    })}, 2000);
+    </script>
+  </body>
+</html>
