@@ -22,4 +22,9 @@ public class EchartsController {
     public String charts() {
         return "asynchronous/line";
     }
+
+    @RequestMapping("/bar")
+    public String bar() {
+        return "asynchronous/bar";
+    }
 }

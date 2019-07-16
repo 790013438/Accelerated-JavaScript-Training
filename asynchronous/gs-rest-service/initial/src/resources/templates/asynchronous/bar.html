@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- 先画框，再画图 -->
+<html>
+  <head>
+    <title>先画图，再获取数据</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div id="bar" style="widht: 45rem; height: 45rem"></div>
+  <script src="echarts.js"></script>
+  <script src="jquery.min.js"></script>
+  <script>
+    var bar = echarts.init(document.getElementById('bar'));
+
+    bar.setOption({
+      title: {
+        text: '异步数据加载示例'
+      },
+      tooltip: {},
+      legend: {
+        data: ['销量']
+      },
+      xAxis: {
+        data: []
+      },
+      yAxis: {},
+      series: [{
+        name: '销量',
+        type: 'bar',
+        data: []
+      }]
+    });
+
+    $.get('greeting').done(function(data) {
+      bar.setOption({
+        xAxis: {
+          data: data.map(function(item) {
+            return item['name']
+          })
+        },
+        // 异步获取对应的类型
+        series: [{
+          name: '销量',
+          data: data.map(function(item) {
+            return item['value']
+          })
+        }]
+      });
+    });
+  </script>
+  </body>
+</html>
