@@ -9,6 +9,10 @@
     <script src="dist/echarts.js"></script>
     <script>
       echarts.init(document.getElementById('pie')).setOption({
+        grid: {
+          width: ['200%'],
+          height: ['200%']
+        },
         series: [{
           type: 'pie',
           data: [
