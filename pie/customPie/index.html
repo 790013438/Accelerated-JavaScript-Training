@@ -43,6 +43,16 @@ myChart.setOption({
     color: '#c23531',
     shadowBlur: 200,
     shadowColor: 'rgba(0, 0, 0, 0.5)'
+  },
+  visualMap: {
+    // 不显示 visualMap 组件,只用于明暗度的映射
+    show: false,
+    min: 80,
+    max: 600,
+    inRange: {
+      // 明暗度的范围是 0 到 1
+      colorLightness: [0, 1]
+    }
   }
 });
     </script>
